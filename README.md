@@ -48,3 +48,25 @@ kunwu是新一代webshell检测引擎，使用了内置了模糊规则、污点�
 
 ![image-20230427115957872](http://139.155.45.67:28090/2023/04/27/293c9baa9bdb2.png)
 
+# Cil使用
+
+## Mac:
+
+![image-20230512154034500](http://139.155.45.67:28090/2023/05/12/fd8b4e8c2d4c8.png)
+
+## Linux:
+
+linux 需要安装musl-tools才能运行
+
+ubuntu:`sudo apt-get install musl-tools`
+
+centos:
+
+```shell
+wget https://copr.fedorainfracloud.org/coprs/ngompa/musl-libc/repo/epel-7/ngompa-musl-libc-epel-7.repo -O /etc/yum.repos.d/ngompa-musl-libc-epel-7.repo
+yum install -y musl-libc-static
+```
+
+
+![image-20230427115957872](http://139.155.45.67:28090/2023/04/27/293c9baa9bdb2.png)
+
