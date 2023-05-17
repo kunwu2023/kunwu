@@ -37,6 +37,13 @@ kunwu是新一代webshell检测引擎，使用了内置了模糊规则、污点�
 
 直接通过sftp读取远程文件进行扫描
 
+## Windows
+
+解压后 运行exe
+![image](https://github.com/kunwu2023/kunwu/assets/131849947/c22d5e78-30ff-44b3-9047-3119aa7cde2b)
+
+
+
 
 
 ## 高级选项
@@ -53,7 +60,12 @@ kunwu是新一代webshell检测引擎，使用了内置了模糊规则、污点�
 
 ## Linux:
 
-![image](https://github.com/kunwu2023/kunwu/assets/131849947/74d213e4-bac4-4779-9f05-c16fb255ba25)
+![image](https://github.com/kunwu2023/kunwu/assets/131849947/002daae6-f86e-4643-b4e5-bdb09ecb3178)
+
+## Windows:
+
+![image](https://github.com/kunwu2023/kunwu/assets/131849947/7045a0e8-bf60-4eb4-b97b-34dda2c62ec5)
+
 
 # 交流反馈:
 
