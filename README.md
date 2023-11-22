@@ -74,3 +74,7 @@ kunwu是新一代webshell检测引擎，使用了内置了模糊规则、污点�
 
 ![image](https://github.com/kunwu2023/kunwu/assets/131849947/67bf7658-5c2a-4fe7-91ad-92cc37ccdb3a)
 
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/kunwu2023/kunwu.svg)](https://starchart.cc/kunwu2023/kunwu)
