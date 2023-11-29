@@ -70,7 +70,7 @@ kunwu是新一代webshell检测引擎，使用了内置了模糊规则、污点�
 
 
 # 交流反馈:
-![image](https://github.com/kunwu2023/kunwu/assets/66074614/ba06279f-4d1c-432a-8ba4-5996c28bc079)
+![1541701248885_ pic](https://github.com/kunwu2023/kunwu/assets/20842613/5f8486d6-6f83-4df8-8d3b-b4550b5aef02)
 
 ![image](https://github.com/kunwu2023/kunwu/assets/131849947/67bf7658-5c2a-4fe7-91ad-92cc37ccdb3a)
 
