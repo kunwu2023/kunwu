@@ -14,6 +14,8 @@
 
 KunWu 支持 GUI 客户端、CLI 工具、在线 WebShell 检测。
 
+### 编译
+
 cli编译：go build -ldflags="-w -s"
 
 gui编译：
@@ -23,6 +25,7 @@ gui编译：
 2. 前端编译修改src/background.js文件中goPath变量路径为编译后的二进制文件
 
 npm inpm run electron:build
+
 
 ### GUI 客户端使用
 
