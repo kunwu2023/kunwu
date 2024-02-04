@@ -1,5 +1,5 @@
 <p align="center">
-  ![logo_kw](https://github.com/kunwu2023/kunwu/assets/31091395/956c21f3-f829-49b3-8358-d2e3ebced65b)
+  <img src="https://github.com/kunwu2023/kunwu/assets/31091395/956c21f3-f829-49b3-8358-d2e3ebced65b" width="120">
 </p>
 <h1 align="center"> KunWu </h1>
 <p align="center">
