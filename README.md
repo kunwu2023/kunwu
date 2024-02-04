@@ -14,6 +14,10 @@
 
 KunWu 支持 GUI 客户端、CLI 工具、在线 WebShell 检测。
 
+### 在线使用
+
+https://ti.moresec.cn/
+
 ### 编译
 
 cli编译：go build -ldflags="-w -s"
