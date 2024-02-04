@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[https://alienimages.oss-cn-hangzhou.aliyuncs.com/image/logo_kw.png](https://github.com/kunwu2023/kunwu/assets/31091395/68537494-f5fb-44d8-b477-abeff262644f)" width="120">
+  ![logo_kw](https://github.com/kunwu2023/kunwu/assets/31091395/956c21f3-f829-49b3-8358-d2e3ebced65b)
 </p>
 <h1 align="center"> KunWu </h1>
 <p align="center">
