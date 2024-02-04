@@ -1,0 +1,74 @@
+{
+  "name": "webshell_check_gui",
+  "productName": "昆吾WebShell检测",
+  "version": "0.1.1",
+  "author": "ctccaozhe",
+  "description": "webshellCheck",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "node node_modules/electron/install.js",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "config": {
+    "electron": {
+      "mirror": "https://registry.npmmirror.com/-/binary/electron/"
+    }
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@codemirror/lang-html": "^6.4.3",
+    "@codemirror/lang-javascript": "^6.1.5",
+    "@codemirror/lang-php": "^6.0.1",
+    "@codemirror/theme-one-dark": "^6.1.1",
+    "@element-plus/icons-vue": "^2.1.0",
+    "@vue/runtime-core": "^3.2.47",
+    "codemirror": "^6.0.1",
+    "core-js": "^3.6.5",
+    "el-table-infinite-scroll": "^3.0.1",
+    "element-plus": "^2.3.2",
+    "vite": "^4.2.1",
+    "vue": "^3.0.0",
+    "vue-codemirror": "^6.1.1",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-plugin-router": "~4.5.15",
+    "@vue/cli-plugin-vuex": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "electron": "^13.0.0",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "vue-cli-plugin-electron-builder": "^2.1.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

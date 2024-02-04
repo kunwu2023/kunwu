@@ -1,0 +1,91 @@
+/* 暗黑主题 */
+
+
+
+/* 表头字体颜色 */
+.el-table thead{
+    color: #c8cfdd;
+}
+
+/* 表格字体颜色 */
+.el-table{
+    color: #c8cfdd;
+    border-spacing: 0;
+}
+
+/* 头部 */
+.el-table th.el-table__cell {
+    background-color: #142143;
+}
+
+
+
+/* 侧边空白区域 */
+.el-table__header-wrapper{
+    background-color: #142143;
+}
+.el-table__body-wrapper {
+    background-color: #142143;
+}
+
+/* 单数行 */
+.el-table tr {
+    background-color: #0c193f;
+    /* background-color: #05133f; */
+}
+/* 偶数行 */
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell{
+    background-color: #142143;
+}
+.el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {
+    border-bottom: 1px solid #142143;
+}
+
+/* 表格悬浮 */
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+    background-color: #29385e !important;
+    /* background-color: #1f3157 !important; */
+}
+
+/* 表格底部线条bug */
+.el-table::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+}
+/* 输入框 */
+input{
+    border-color: #2f61df;
+}
+input::-webkit-input-placeholder{
+    color: #93969e !important;
+}
+.el-input__inner:hover {
+    border-color: #2f61df;
+}
+.el-input__inner {
+    /* background-color: #142143; */
+    background-color: #213057;
+    border-radius: 8px;
+    border-color: #142143;
+    color: aliceblue;
+}
+
+/* 按钮 */
+.el-button--primary {
+    color: #409EFF;
+    background-color: #213057;
+    border-color: #213057;
+}
+.el-button--primary:focus, .el-button--primary:hover {
+    background-color: #364b80;
+    border-color: #364b80;
+    color: #b0d6fc;
+}
+
+/* 全局背景 */
+html {
+    background: #0c193f;
+    color: aliceblue;
+}
