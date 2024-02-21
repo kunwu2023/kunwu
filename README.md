@@ -10,7 +10,7 @@
 <p align="center"> 集<b>模糊规则</b>、<b>污点分析模拟执行</b>、<b>机器学习</b>三种高效检测策略，精准无误地发现 WebShell 风险</p>
 
 
-# 🚀1# 快速开始
+# 🚀1 快速开始
 
 KunWu 支持 GUI 客户端、CLI 工具、在线 WebShell 检测。
 
@@ -27,7 +27,7 @@ CLI编译命令：`go build -ldflags="-w -s"`
 1. 后端编译 `cd gui_go/go build -ldflags="-w -s"cd ..`
 2. 前端编译修改 `src/background.js` 文件中 `goPath` 变量路径为编译后的二进制文件 `npm inpm run electron:build`
 
-# 🐉2# 客户端使用
+# 🐉2 客户端使用
 
 ## 2.1 GUI客户端
 
