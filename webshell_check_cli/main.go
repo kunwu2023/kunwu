@@ -16,36 +16,39 @@ import (
 
 func GetAllFilePaths(dirPath string) ([]string, error) {
 	var paths []string
-	files, err := ioutil.ReadDir(dirPath)
+	var mu sync.Mutex // 互斥锁保护共享资源
+	var wg sync.WaitGroup
+
+	err := filepath.Walk(dirPath, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+
+		if info.IsDir() {
+			return nil // 跳过目录，但继续递归遍历
+		}
+
+		if info.Size() == 0 {
+			fmt.Printf("Skipping empty file: %s\n", path)
+			return nil
+		}
+
+		wg.Add(1)
+		go func(path string) {
+			defer wg.Done()
+			mu.Lock()
+			paths = append(paths, path)
+			mu.Unlock()
+		}(path)
+
+		return nil
+	})
+
 	if err != nil {
 		return nil, err
 	}
-	for _, file := range files {
-		filePath := filepath.Join(dirPath, file.Name())
-		fileInfo, err := os.Stat(filePath)
-		if err != nil {
-			fmt.Println(err.Error())
-			continue
-		}
 
-		if fileInfo.IsDir() {
-			// 如果是目录，则递归获取所有文件路径
-			subPaths, err := GetAllFilePaths(filePath)
-			if err != nil {
-				return nil, err
-			}
-			paths = append(paths, subPaths...)
-		} else {
-			// 如果是文件，判断文件是否为空,不为空则将其路径添加到列表中
-			if fileInfo.Size() != 0 {
-				paths = append(paths, filePath)
-			} else {
-				err = errors.New("is an empty file")
-				fmt.Println(filePath, err.Error())
-				continue
-			}
-		}
-	}
+	wg.Wait()
 	return paths, nil
 }
 
